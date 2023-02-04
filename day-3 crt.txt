@@ -1,0 +1,298 @@
+append()- Add an element to the end of the list - I.append(4)
+extend() - Add all elements of a list to the another list - I extend((5,6))
+insert) - Insert an item at the defined index - I.insert (1, 22)-1-index 
+remove()- Removes an item from the list - I. remove (22) 
+pop()- Removes and returns an element at the given index - I.pop(3) 
+clear()- Removes all items from the list-l.clear 
+index() - Returns the index of the first matched item 
+count() - Returns the count of the number of items passed as an argument
+sort()- Sort items in a list in ascending order 
+reverse()-Reverse the order of items in the list 
+copy() - Returns a shallow copy of the list[11]
+
+
+
+L=[1,4,1,1,6,4,1,2]
+len(L)
+8
+L.count(1)
+4
+L. append(400)
+L
+[1, 4, 1, 1, 6, 4, 1, 2, 400]
+L.extend([100,200,300])
+L
+[1, 4, 1, 1, 6, 4, 1, 2, 400, 100, 200, 300]
+L.remove(1)
+L
+[4, 1, 1, 6, 4, 1, 2, 400, 100, 200, 300]
+L.pop(-2)
+200
+L.pop(9)
+300
+L.pop(8)
+100
+L
+[4, 1, 1, 6, 4, 1, 2, 400]
+L.sort()
+L
+[1, 1, 1, 2, 4, 4, 6, 400]
+L.reverse()
+L
+[400, 6, 4, 4, 2, 1, 1, 1]
+
+PROGRAMES FOR LIST:
+*Create a list with 10 items and print the elements one by one?
+PROGRAME:
+L=['key','watches','plank','rubber','clock','brush','dress','eyeshadow','makeupkit','lipstick']
+for j in L:
+    print(j)
+OUTPUT:
+key
+watches
+plank
+rubber
+clock
+brush
+dress
+eyeshadow
+makeupkit
+lipstick
+
+*Create a list with 5 float numbers and find and display sum and avg of the list?
+PROGRAME:
+L=[2.2,3.3,4.5,5.6,7.5]
+for i in L:
+   print(i)
+total=sum(L)
+print(total)
+average=total/5
+print(average)
+ 
+OUTPUT:
+2.2
+3.3
+4.5
+5.6
+7.5
+23.1
+4.62
+
+
+*After creating a list with 6 elements from the user extract only even numbers and print?
+PROGRAME:
+L=[1,2,3,4,5,6]
+for i in L:
+    if(i%2==0):
+        print(i)
+
+OUTPUT;
+2
+4
+6
+
+or
+
+PROGRAME:
+size=int (input ("size :"))
+
+L= []
+
+for i in range (size):
+    ele=int (input ("element :"))
+    L. append (ele)
+print (L)
+
+for j in L:
+    if (j%2==0):
+         print (j)
+
+OUTPUT:
+size :6
+element :1
+element :2
+element :3
+element :4
+element :5
+element :6
+[1, 2, 3, 4, 5, 6]
+2
+4
+6
+
+*GET list of NO.S as INPUT,RETURN THR product if the product is less than 750....Else return the sum'''
+PROGRAME:
+L=list(map(int,input("Enter the elements:").split(",")))
+prod=1
+sum=0
+for i in range (len (L)) :
+    prod=prod*L[i]
+    sum=sum+L [i]
+if(prod<750):
+     print ("Product of the given numbers:", prod)
+else:
+     print ("Sum of the given:", sum)
+
+OUTPUT:
+Enter the elements:56,55,58,49,59
+Sum of the given: 277
+
+*Create list using appending list
+PROGRAME:
+=["hyd","vizag","chennai","vijayawada"]
+city=[]
+for n in L:
+    if "v" in n:
+        city.append(n)
+print(city)
+ 
+OUTPUT:
+['vizag', 'vijayawada']
+
+*Create list using tuple list?
+PROGRAM:
+L1=[2**x for x in range(2,10)]
+print(L1)
+L2=[a for a in range (100,201,20)]
+print(L2)
+L3=[1,2,3,4,5,6]
+L4=[i for i in L3 if (i<5)]
+print(L4)
+
+OUTPUT:
+[4, 8, 16, 32, 64, 128, 256, 512]
+[100, 120, 140, 160, 180, 200]
+[1, 2, 3, 4]
+
+*create a list using numbers?
+PROGRAME:
+numbers=[elements for elements in "Great Afternoon"]
+print(numbers)
+
+OUTPUT:
+['G', 'r', 'e', 'a', 't', ' ', 'A', 'f', 't', 'e', 'r', 'n', 'o', 'o', 'n']
+
+*s.add(element) s.update(|20.40|) s.discard(element) s.remove(element).....get error is element not present?
+PROGRAME:
+
+
+
+
+
+
+
+
+
+
+
+
+
+*TUPLE:
+TUPLE:V
+ORDERED
+UNCHANGABLE
+Cant include items
+Can fetch using t [index]
+Methods - - count and index
+Count - elements no.of occurrences
+method finds the first occurrence of the specified value
+The index ( method rat an exception if the value is not found Index - returns element's index
+>>>t.index(10)
+will return index 
+
+EX PRGRME:
+t=(4,3,4,9.6,"ice cream")
+type(t)
+<class 'tuple'>
+t.count(4)
+2
+t.index(4)
+0
+d={1:"one",2:"two"}
+d
+{1: 'one', 2: 'two'}
+type(d)
+<class 'dict'>
+
+
+
+*DICTIONARY:
+it contains elements with 2 units which are keys and values...where keys must be unique
+EX:
+type(d)
+<class 'dict'>
+d.keys()
+dict_keys([1, 2])
+d.values()
+dict_values(['one', 'two'])
+d.dictitems(['one','two'])
+d.items()
+dict_items([(1,'one'),(2,'two')])
+
+~Dictionary is with keys
+list is with index
+type(d)
+<class 'dict'>
+d.keys()
+dict_keys(['syl', 'chaaru'])
+d.values()
+dict_values(['techno', 'meizu'])
+l[1]
+20
+20
+d['syl']
+'techno'
+d.get('syl')
+'techno'
+d.get('syl')
+'techno'
+
+
+#SET
+*Dupicates are not allowed
+*Unordered
+*No index
+s={10,20,30,40,20,30}
+s
+{40, 10, 20, 30}
+------
+#set methods
+add():Adds an element to the set-----s.add(2)
+update():Adds more than one element----s.update({9,99})
+remove() and discard():Both are same but remove return error if the element is not in the list---s.discard(2) and s.remove(2)
+Union():returns the union of 2 sets----s1|s2 or s1.union(s2)
+Intersection:returns the intersection of 2 sets----s1&s2 or s1.intersection(s2)
+Difference:returns the diff of 2 sets---s1-s2 or s1.differnce(s2)
+issuperset():checks whether all the elements in s1 present in s2
+symmetric_difference():returns the elements which are not common in 2 sets---s1.symmetric_difference(s2)
+s.add(50)
+s
+{40, 10, 50, 20, 30}
+s.update({60,70})
+s
+{70, 40, 10, 50, 20, 60, 30}
+s.discard(70)
+s
+{40, 10, 50, 20, 60, 30}
+s.remove(70)
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    s.remove(70)
+KeyError: 70
+s.remove(60)
+s
+{40, 10, 50, 20, 30}
+s1={1,2,3,4,5}
+s2={2,4,6}
+s1.union(s2)
+{1, 2, 3, 4, 5, 6}
+s1.intersection(s2)
+{2, 4}
+s1.difference(s2)
+{1, 3, 5}
+s1-s2
+{1, 3, 5}
+s1.issuperset(s2)
+False
+s1.symmetric_difference(s2)
+{1, 3, 5, 6}
